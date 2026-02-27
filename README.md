@@ -1,20 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Backend-Focused Full-Stack Developer
+
+This is my personal portfolio website showcasing my skills, experience, and projects as a backend-focused full-stack developer. Built with Next.js, TypeScript, and Tailwind CSS following DDD principles.
+
+## About Me
+
+I'm a fourth-year IT student at Royal University of Phnom Penh (RUPP) with production experience in building scalable backend systems using Laravel, FastAPI, PostgreSQL, and modern DevOps practices. This portfolio demonstrates my expertise in:
+
+- **Backend Development**: Laravel, FastAPI, Node.js, REST APIs
+- **Frontend Development**: React.js, Next.js, TypeScript, Tailwind CSS
+- **Database**: PostgreSQL, MySQL, Redis, MongoDB
+- **DevOps & Infrastructure**: Docker, Nginx, CI/CD, Linux
+- **Architecture**: DDD, Microservices, Clean Architecture, System Design
 
 ## Getting Started
 
-First, run the development server:
+To run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev -- --port 3003
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3003](http://localhost:3003) with your browser to see the result.
+
+## Project Structure
+
+This project follows a DDD-inspired, feature-based folder structure:
+
+```
+src/
+├── app/                # Routes only (thin pages)
+├── domains/            # Domain models + types + domain logic
+├── features/           # Feature modules (projects, experience, contact, home)
+├── shared/             # Shared UI components, utilities, hooks, config
+├── data/               # Static data sources (projects, experience, skills)
+└── styles/             # Global styles
+```
+
+## Features
+
+- **Responsive Design**: Works seamlessly on all devices
+- **Dark Mode**: Toggle between light and dark themes
+- **SEO Optimized**: Meta tags, sitemap, robots.txt, JSON-LD structured data
+- **TypeScript**: Full type safety throughout the application
+- **Performance**: Optimized images, lazy loading, Core Web Vitals
+- **Accessibility**: Keyboard navigation, ARIA labels, good contrast ratios
+
+## Deployment
+
+This project is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the repository on Vercel
+3. Set environment variables if needed
+4. Deploy automatically
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Theme**: next-themes
+- **Deployment**: Vercel
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
